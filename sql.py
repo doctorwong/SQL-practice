@@ -18,10 +18,6 @@ cursor = conn.cursor()
 cursor.execute(
         "select host_key from cookies limit 10")
 
-#commiting changes to database
-
-
-
 #fetches results from cursor and saves them to results - fetchone
 results = cursor.fetchall()
 
