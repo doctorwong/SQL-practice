@@ -1,3 +1,6 @@
+
+/* CREATE TABLE EXERCISE */
+
 CREATE TABLE friends (id INTEGER, name TEXT, birthday DATE);
 
 INSERT INTO friends (id, name, birthday) VALUES (0, 'Jane Doe', '1990-05-30');
@@ -43,6 +46,8 @@ SELECT * FROM friends;
 
 SELECT * FROM nomnom;
 
+/* QUERIES - RESTAURANTS EXERCISE */
+
 SELECT DISTINCT neighborhood FROM nomnom;
 
 SELECT DISTINCT cuisine FROM nomnom;
@@ -68,6 +73,8 @@ WHERE health IS NULL;
 SELECT * FROM nomnom
 ORDER BY review DESC LIMIT 10;
 
+/* TRENDS IN STARTUPS EXERCISE */
+
 SELECT * FROM startups;
 
 SELECT COUNT(*) FROM startups;
@@ -83,6 +90,8 @@ SELECT AVG(valuation) FROM startups;
 
 SELECT category, AVG(valuation) FROM startups
 GROUP BY category;
+
+/* MULTIPLE TABLES EXERCISE */
 
 SELECT * FROM trips;
 SELECT * FROM riders;
